@@ -129,6 +129,8 @@ nav.scrolled{background:rgba(255,255,255,0.92);border-bottom:1px solid var(--bor
 .mq-item{font-family:'Cormorant Garamond',serif;font-size:13px;letter-spacing:.18em;
   color:var(--muted);text-transform:uppercase;display:flex;align-items:center;gap:14px;flex-shrink:0}
 .mq-dot{width:4px;height:4px;border-radius:50%;background:var(--gold);opacity:.45}
+/* urun adlari marka yazimini korur; buyuk harfe cevrilmez */
+.mq-item.mq-brand{text-transform:none;letter-spacing:.1em}
 
 /* SECTIONS */
 section{padding:96px 60px}
@@ -304,10 +306,10 @@ footer{padding:36px 60px;border-top:1px solid var(--border);display:flex;align-i
   ],
   "brand": [
     { "@type": "Brand", "name": "HemaLens", "url": "https://www.hemalens.com" },
+    { "@type": "Brand", "name": "ImProWiseAI" },
     { "@type": "Brand", "name": "ReGain Assist", "url": "https://www.regainassist.com" },
-    { "@type": "Brand", "name": "MamaWill", "url": "https://www.mamawill.com" },
-    { "@type": "Brand", "name": "MuscleWise AI" },
-    { "@type": "Brand", "name": "ImProWise AI" }
+    { "@type": "Brand", "name": "MuscleWiseAI" },
+    { "@type": "Brand", "name": "MamaWill", "url": "https://www.mamawill.com" }
   ]
 }
 </script>
@@ -352,8 +354,8 @@ footer{padding:36px 60px;border-top:1px solid var(--border);display:flex;align-i
 
   <div class="hero-left">
     <div class="hero-tag">
-      <span class="tr">İzmir, Türkiye &nbsp;·&nbsp; Klinik Yazılım &amp; Dijital Sağlık Teknolojileri</span>
-      <span class="en">İzmir, Turkey &nbsp;·&nbsp; Clinical Software &amp; Digital Health Technology</span>
+      <span class="tr">Klinik Yazılım &amp; Dijital Sağlık Teknolojileri</span>
+      <span class="en">Clinical Software &amp; Digital Health Technology</span>
     </div>
     <h1 class="hero-h1">
       <span class="tr">Hayatın kritik<br>anlarına <em>zekâ</em><br>katıyoruz.</span>
@@ -381,18 +383,18 @@ footer{padding:36px 60px;border-top:1px solid var(--border);display:flex;align-i
 <!-- MARQUEE -->
 <div class="marquee-wrap">
   <div class="marquee-track">
-    <div class="mq-item"><span class="mq-dot"></span>HemaLens</div>
-    <div class="mq-item"><span class="mq-dot"></span>ReGain Assist</div>
-    <div class="mq-item"><span class="mq-dot"></span>MamaWill</div>
-    <div class="mq-item"><span class="mq-dot"></span>MuscleWise AI</div>
-    <div class="mq-item"><span class="mq-dot"></span>ImProWise AI</div>
+    <div class="mq-item mq-brand"><span class="mq-dot"></span>HemaLens</div>
+    <div class="mq-item mq-brand"><span class="mq-dot"></span>ImProWiseAI</div>
+    <div class="mq-item mq-brand"><span class="mq-dot"></span>ReGain Assist</div>
+    <div class="mq-item mq-brand"><span class="mq-dot"></span>MuscleWiseAI</div>
+    <div class="mq-item mq-brand"><span class="mq-dot"></span>MamaWill</div>
     <div class="mq-item"><span class="mq-dot"></span><span class="tr">Klinik Karar Destek</span><span class="en">Clinical Decision Support</span></div>
     <div class="mq-item"><span class="mq-dot"></span><span class="tr">Açıklanabilir Algoritmalar</span><span class="en">Explainable Algorithms</span></div>
-    <div class="mq-item"><span class="mq-dot"></span>HemaLens</div>
-    <div class="mq-item"><span class="mq-dot"></span>ReGain Assist</div>
-    <div class="mq-item"><span class="mq-dot"></span>MamaWill</div>
-    <div class="mq-item"><span class="mq-dot"></span>MuscleWise AI</div>
-    <div class="mq-item"><span class="mq-dot"></span>ImProWise AI</div>
+    <div class="mq-item mq-brand"><span class="mq-dot"></span>HemaLens</div>
+    <div class="mq-item mq-brand"><span class="mq-dot"></span>ImProWiseAI</div>
+    <div class="mq-item mq-brand"><span class="mq-dot"></span>ReGain Assist</div>
+    <div class="mq-item mq-brand"><span class="mq-dot"></span>MuscleWiseAI</div>
+    <div class="mq-item mq-brand"><span class="mq-dot"></span>MamaWill</div>
     <div class="mq-item"><span class="mq-dot"></span><span class="tr">Klinik Karar Destek</span><span class="en">Clinical Decision Support</span></div>
     <div class="mq-item"><span class="mq-dot"></span><span class="tr">Açıklanabilir Algoritmalar</span><span class="en">Explainable Algorithms</span></div>
   </div>
@@ -407,8 +409,8 @@ footer{padding:36px 60px;border-top:1px solid var(--border);display:flex;align-i
       <span class="en">Data gains value not<br>when measured, but<br>when <em>understood.</em></span>
     </h2>
     <p>
-      <span class="tr">Entorion Technology, ham veriyi klinik içgörüye ve pratik aksiyona dönüştüren bir klinik yazılım ve dijital sağlık teknolojileri şirketidir. Her ürünümüzün arkasında kanıta dayalı bir metodoloji ve açıklanabilir bir karar mantığı yatar. HemaLens, ReGain Assist, MamaWill, MuscleWise AI ve ImProWise AI, Entorion Technology çatısı altında geliştirilen ürünlerdir.</span>
-      <span class="en">Entorion Technology is a clinical software and digital health technology company that turns raw data into clinical insight and practical action. Behind each product lies an evidence-based methodology and explainable decision logic. HemaLens, ReGain Assist, MamaWill, MuscleWise AI and ImProWise AI are products developed under Entorion Technology.</span>
+      <span class="tr">Entorion Technology, ham veriyi klinik içgörüye ve pratik aksiyona dönüştüren bir klinik yazılım ve dijital sağlık teknolojileri şirketidir. Her ürünümüzün arkasında kanıta dayalı bir metodoloji ve açıklanabilir bir karar mantığı yatar. HemaLens, ImProWiseAI, ReGain Assist, MuscleWiseAI ve MamaWill, Entorion Technology çatısı altında geliştirilen ürünlerdir.</span>
+      <span class="en">Entorion Technology is a clinical software and digital health technology company that turns raw data into clinical insight and practical action. Behind each product lies an evidence-based methodology and explainable decision logic. HemaLens, ImProWiseAI, ReGain Assist, MuscleWiseAI and MamaWill are products developed under Entorion Technology.</span>
     </p>
   </div>
   <div class="phil-pillars">
@@ -459,6 +461,22 @@ footer{padding:36px 60px;border-top:1px solid var(--border);display:flex;align-i
     </div>
 
     <div class="pcard">
+      <div class="pcard-name">ImProWiseAI</div>
+      <div class="pcard-domain"><span class="tr">Dental Planlama · CBCT</span><span class="en">Dental Planning · CBCT</span></div>
+      <p class="pcard-tagline"><span class="tr">Dental CBCT verisi üzerinde implant planlamasını protetik tasarımdan başlatan, tarayıcıda çalışan karar destek aracı.</span><span class="en">A browser-based decision-support tool that starts implant planning from the prosthetic design, on dental CBCT data.</span></p>
+      <div class="pcard-features">
+        <div class="pcard-feat"><span class="tr">Planlama kemik hacminden değil, hekimin protetik tasarımından başlar</span><span class="en">Planning starts from the clinician's prosthetic design, not from bone volume</span></div>
+        <div class="pcard-feat"><span class="tr">Üretici bağımsız: belirli bir implant kütüphanesine bağlı değildir</span><span class="en">Manufacturer-independent: not tied to any single implant library</span></div>
+        <div class="pcard-feat"><span class="tr">MPR kesit görüntüleme, ölçüm araçları, ROI/histogram, implant yerleştirme ve rapor</span><span class="en">MPR slice viewing, measurement tools, ROI/histogram, implant placement and reporting</span></div>
+        <div class="pcard-feat"><span class="tr">Hasta verisi sunucuya gitmez — tüm işlem tarayıcıda gerçekleşir; kurulum gerektirmez</span><span class="en">Patient data never leaves the browser — all processing is local; no installation</span></div>
+      </div>
+      <div class="pcard-bottom">
+        <span class="pcard-status status-dev"><span class="tr">Araştırma</span><span class="en">Research</span></span>
+        <span class="pcard-nodomain"><span class="tr">Davetli Erişim</span><span class="en">Invite-only</span></span>
+      </div>
+    </div>
+
+    <div class="pcard">
       <div class="pcard-name">ReGain Assist</div>
       <div class="pcard-domain"><span class="tr">Diş Hekimliği Yönetimi</span><span class="en">Dental Clinic Management</span></div>
       <p class="pcard-tagline"><span class="tr">Diş kliniklerinde hasta, tedavi, tahsilat ve mevzuat raporlamasını tek platformda toplayan klinik yönetim sistemi.</span><span class="en">Clinic management for dental practices: patients, treatment, collections and regulatory reporting on one platform.</span></p>
@@ -475,23 +493,7 @@ footer{padding:36px 60px;border-top:1px solid var(--border);display:flex;align-i
     </div>
 
     <div class="pcard">
-      <div class="pcard-name">MamaWill</div>
-      <div class="pcard-domain"><span class="tr">Ebeveynlik &amp; Aile</span><span class="en">Parenthood &amp; Family</span></div>
-      <p class="pcard-tagline"><span class="tr">Hamileliğin kırk haftasını kayıt altına almak için bir uygulama ve 106 sayfalık basılabilir planlayıcı.</span><span class="en">An app and a 106-page printable planner for keeping a record of all forty weeks of pregnancy.</span></p>
-      <div class="pcard-features">
-        <div class="pcard-feat"><span class="tr">Telefonda çevrimdışı çalışır; internet bağlantısı gerektirmez</span><span class="en">Runs offline on your phone; no connection required</span></div>
-        <div class="pcard-feat"><span class="tr">106 sayfalık basılabilir PDF planlayıcı — yazdır, doldur, sakla</span><span class="en">A 106-page printable PDF planner — print it, fill it in, keep it</span></div>
-        <div class="pcard-feat"><span class="tr">Uygulama ve planlayıcı tek pakette, tek seferlik ödeme</span><span class="en">App and planner in a single bundle, one-time payment</span></div>
-        <div class="pcard-feat"><span class="tr">Mağaza sürümü hazırlanıyor</span><span class="en">A store release is in preparation</span></div>
-      </div>
-      <div class="pcard-bottom">
-        <span class="pcard-status status-live"><span class="tr">Yayında</span><span class="en">Live</span></span>
-        <a href="https://www.mamawill.com" target="_blank" rel="noopener" class="pcard-link">mamawill.com ↗</a>
-      </div>
-    </div>
-
-    <div class="pcard">
-      <div class="pcard-name">MuscleWise AI</div>
+      <div class="pcard-name">MuscleWiseAI</div>
       <div class="pcard-domain"><span class="tr">Fitness &amp; Antrenman</span><span class="en">Fitness &amp; Training</span></div>
       <p class="pcard-tagline"><span class="tr">Sporcu ile antrenörü aynı uygulamada buluşturan, native iOS ve Android antrenman takip platformu.</span><span class="en">A native iOS and Android training platform that connects athletes and their coaches in one app.</span></p>
       <div class="pcard-features">
@@ -507,18 +509,18 @@ footer{padding:36px 60px;border-top:1px solid var(--border);display:flex;align-i
     </div>
 
     <div class="pcard">
-      <div class="pcard-name">ImProWise AI</div>
-      <div class="pcard-domain"><span class="tr">Dental Planlama · CBCT</span><span class="en">Dental Planning · CBCT</span></div>
-      <p class="pcard-tagline"><span class="tr">Dental CBCT verisi üzerinde implant planlamasını protetik tasarımdan başlatan, tarayıcıda çalışan karar destek aracı.</span><span class="en">A browser-based decision-support tool that starts implant planning from the prosthetic design, on dental CBCT data.</span></p>
+      <div class="pcard-name">MamaWill</div>
+      <div class="pcard-domain"><span class="tr">Ebeveynlik &amp; Aile</span><span class="en">Parenthood &amp; Family</span></div>
+      <p class="pcard-tagline"><span class="tr">Hamileliğin kırk haftasını kayıt altına almak için bir uygulama ve 106 sayfalık basılabilir planlayıcı.</span><span class="en">An app and a 106-page printable planner for keeping a record of all forty weeks of pregnancy.</span></p>
       <div class="pcard-features">
-        <div class="pcard-feat"><span class="tr">Planlama kemik hacminden değil, hekimin protetik tasarımından başlar</span><span class="en">Planning starts from the clinician's prosthetic design, not from bone volume</span></div>
-        <div class="pcard-feat"><span class="tr">Üretici bağımsız: belirli bir implant kütüphanesine bağlı değildir</span><span class="en">Manufacturer-independent: not tied to any single implant library</span></div>
-        <div class="pcard-feat"><span class="tr">MPR kesit görüntüleme, ölçüm araçları, ROI/histogram, implant yerleştirme ve rapor</span><span class="en">MPR slice viewing, measurement tools, ROI/histogram, implant placement and reporting</span></div>
-        <div class="pcard-feat"><span class="tr">Hasta verisi sunucuya gitmez — tüm işlem tarayıcıda gerçekleşir; kurulum gerektirmez</span><span class="en">Patient data never leaves the browser — all processing is local; no installation</span></div>
+        <div class="pcard-feat"><span class="tr">Telefonda çevrimdışı çalışır; internet bağlantısı gerektirmez</span><span class="en">Runs offline on your phone; no connection required</span></div>
+        <div class="pcard-feat"><span class="tr">106 sayfalık basılabilir PDF planlayıcı — yazdır, doldur, sakla</span><span class="en">A 106-page printable PDF planner — print it, fill it in, keep it</span></div>
+        <div class="pcard-feat"><span class="tr">Uygulama ve planlayıcı tek pakette, tek seferlik ödeme</span><span class="en">App and planner in a single bundle, one-time payment</span></div>
+        <div class="pcard-feat"><span class="tr">Mağaza sürümü hazırlanıyor</span><span class="en">A store release is in preparation</span></div>
       </div>
       <div class="pcard-bottom">
-        <span class="pcard-status status-dev"><span class="tr">Araştırma</span><span class="en">Research</span></span>
-        <span class="pcard-nodomain"><span class="tr">Davetli Erişim</span><span class="en">Invite-only</span></span>
+        <span class="pcard-status status-live"><span class="tr">Yayında</span><span class="en">Live</span></span>
+        <a href="https://www.mamawill.com" target="_blank" rel="noopener" class="pcard-link">mamawill.com ↗</a>
       </div>
     </div>
 
